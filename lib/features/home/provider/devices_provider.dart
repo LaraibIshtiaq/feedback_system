@@ -6,11 +6,7 @@ var devicesProvider = StateNotifierProvider
   ((ref) => DevicesNotifier());
 
 class DevicesNotifier extends StateNotifier<List<Device>> {
-  DevicesNotifier(): super([
-    Device(id: 1, name: "Device 1", description: "Description 1"),
-    Device(id: 2, name: "Device 2", description: "Description 2"),
-    Device(id: 3, name: "Device 3", description: "Description 3"),
-  ]);
+  DevicesNotifier(): super([]);
 
   void add(Device device) {
     state.add(device);
@@ -19,5 +15,9 @@ class DevicesNotifier extends StateNotifier<List<Device>> {
   void remove(int deviceId) {
     state.removeWhere((element) => element.id == deviceId,);
     state = List.from(state);
+  }
+
+  void replaceAll(List<Device> devices) {
+    state = devices;
   }
 }
