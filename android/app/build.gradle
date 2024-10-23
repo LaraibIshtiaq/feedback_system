@@ -51,7 +51,7 @@ android {
     flavorDimensions "app"
 
     productFlavors {
-        dev {
+        development {
             dimension "app"
             applicationId "com.teointl.f11_flutter"
             versionCode 1
