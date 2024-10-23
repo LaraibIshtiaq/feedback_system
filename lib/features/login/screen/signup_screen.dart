@@ -1,6 +1,4 @@
-import 'package:auto_route/annotations.dart';
 import 'package:auto_route/auto_route.dart';
-import 'package:f11_flutter/features/login/screen/forget_password.dart';
 import 'package:f11_flutter/shared/routes/route.gr.dart';
 import 'package:flutter/material.dart';
 
