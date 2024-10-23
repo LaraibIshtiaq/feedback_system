@@ -9,32 +9,36 @@ class SignupScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text("Sign Up User"),
+        centerTitle: true,
+      ),
       body: SafeArea(
-        child: Center(
-          child: Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Column(
-              children: [
-                Text("Sign Up User"),
-                TextField(
-                  decoration: InputDecoration(hintText: "Enter User Name"),
-                ),
-                TextField(
-                  decoration: InputDecoration(hintText: "Enter Password"),
-                  obscureText: true,
-                ),
-                TextField(
-                  decoration: InputDecoration(hintText: "Enter Confirm Password"),
-                  obscureText: true,
-                ),
-                ElevatedButton(
-                  onPressed: () {
-                    context.replaceRoute(HomeRoute());
-                  },
-                  child: Text("Sign Up"),
-                ),
-              ],
-            ),
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              TextField(
+                decoration: InputDecoration(hintText: "Enter User Name"),
+              ),
+              TextField(
+                decoration: InputDecoration(hintText: "Enter Password"),
+                obscureText: true,
+              ),
+              TextField(
+                decoration: InputDecoration(hintText: "Enter Confirm Password"),
+                obscureText: true,
+              ),
+              SizedBox(height: 20),
+              ElevatedButton(
+                onPressed: () {
+                  context.replaceRoute(HomeRoute());
+                },
+                child: Text("Sign Up"),
+              ),
+            ],
           ),
         ),
       ),

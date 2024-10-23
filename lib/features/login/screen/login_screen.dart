@@ -11,13 +11,17 @@ class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text("Login User"),
+        centerTitle: true,
+      ),
       body: SafeArea(
         child: Center(
           child: Padding(
             padding: const EdgeInsets.all(8.0),
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text("Login User"),
                 TextField(
                   decoration: InputDecoration(hintText: "Enter User Name"),
                 ),

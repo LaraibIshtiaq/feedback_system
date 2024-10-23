@@ -9,24 +9,31 @@ class ForgetPasswordScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text("Forget Password"),
+        centerTitle: true,
+      ),
       body: SafeArea(
-        child: Center(
-          child: Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Column(
-              children: [
-                Text("Forget Password"),
-                TextField(
-                  decoration: InputDecoration(hintText: "Enter User Name"),
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              TextField(
+                decoration: InputDecoration(
+                    hintText: "Enter User Name",
+
                 ),
-                ElevatedButton(
-                  onPressed: () {
-                    context.maybePop();
-                  },
-                  child: Text("Submit"),
-                ),
-              ],
-            ),
+              ),
+              SizedBox(height: 20),
+              ElevatedButton(
+                onPressed: () {
+                  context.maybePop();
+                },
+                child: Text("Submit"),
+              ),
+            ],
           ),
         ),
       ),
