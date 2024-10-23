@@ -25,9 +25,9 @@ abstract class EnvInfo {
 /// and methods to the AppEnvironment enum.
 extension _EnvProperties on AppEnvironment {
   static const _appTitles = {
-    AppEnvironment.dev: 'TinyMobileRobot_Dev',
-    AppEnvironment.staging: 'TinyMobileRobot_Staging',
-    AppEnvironment.prod: 'TinyMobileRobot',
+    AppEnvironment.dev: 'F11_Dev',
+    AppEnvironment.staging: 'F11_Staging',
+    AppEnvironment.prod: 'F11',
   };
 
   static const _connectionStrings = {
