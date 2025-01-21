@@ -1,16 +1,11 @@
-
-
-import 'package:f11_flutter/shared/constants/sizes.dart';
+import 'package:capp_mobile/shared/constants/sizes.dart';
 
 const double perPageLimit = size_20;
 
 class PaginatedResponse<T> {
   final int total;
-
   final int skip;
-
   static const limit = perPageLimit;
-
   final List<T> data;
 
   PaginatedResponse(

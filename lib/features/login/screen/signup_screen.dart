@@ -1,5 +1,5 @@
 import 'package:auto_route/auto_route.dart';
-import 'package:f11_flutter/shared/routes/route.gr.dart';
+import 'package:capp_mobile/shared/routes/route.gr.dart';
 import 'package:flutter/material.dart';
 
 @RoutePage()

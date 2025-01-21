@@ -1,33 +1,47 @@
-import 'package:f11_flutter/shared/routes/route.dart';
+import 'package:capp_mobile/shared/routes/route.dart';
+import 'package:capp_mobile/shared/theme/app_dimens.dart';
+import 'package:capp_mobile/shared/theme/app_theme.dart';
 import 'package:flutter/material.dart';
-import '../shared/theme/app_theme.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-class MyApp extends StatefulWidget {
-  MyApp({super.key});
+class MyApp extends ConsumerStatefulWidget {
+  const MyApp({super.key});
 
   @override
-  State<MyApp> createState() => _MyAppState();
+  ConsumerState<MyApp> createState() => _MyAppState();
 }
 
-class _MyAppState extends State<MyApp> {
+class _MyAppState extends ConsumerState<MyApp> with WidgetsBindingObserver {
   final router = AppRouter();
 
   @override
-  Widget build(BuildContext context)
-  {
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addPostFrameCallback((_) async {
+      AppDimensions.initialize(MediaQuery.of(context).size.width);
+    });
+  }
+
+  @override
+  void dispose() {
+    WidgetsBinding.instance.removeObserver(this);
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
     /// Build the application UI using the `MaterialApp` widget.
-    return MaterialApp.router(
-      /// The title of the application.
-      title: 'Flutter TDD',
-
-      /// Whether to show the debug banner in debug mode.
-      debugShowCheckedModeBanner: false,
-
-      /// Theme for app
-      theme: appTheme,
-
-      /// Router Config
-      routerConfig: router.config(),
+    return Consumer(
+      builder: (context, ref, _){
+        return MaterialApp.router(
+        title: 'CAPP - TEO Customer App',
+        debugShowCheckedModeBanner: false,
+        themeMode: ThemeMode.system,
+        theme: GlobalThemData.lightThemeData,
+        darkTheme: GlobalThemData.darkThemeData,
+        routerConfig: router.config(),
+        );
+      }
     );
   }
 }

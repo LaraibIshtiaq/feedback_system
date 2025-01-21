@@ -1,22 +1,22 @@
 import 'dart:developer';
 
 import 'package:dartz/dartz.dart';
-import 'package:f11_flutter/core/response.dart';
-import 'package:f11_flutter/domain/model/ui_dto/device.dart';
-import 'package:f11_flutter/domain/repositories/devices_repository.dart';
+import 'package:capp_mobile/core/response.dart';
+import 'package:capp_mobile/domain/model/ui_dto/event.dart';
+import 'package:capp_mobile/domain/repositories/devices_repository.dart';
 
 import '../remote/dio_network_service.dart';
 
-class DevicesRepositoryImpl extends DevicesRepository{
+class EventRepositoryImpl extends EventRepository{
 
   final DioNetworkService networkService;
 
-  DevicesRepositoryImpl(this.networkService);
+  EventRepositoryImpl(this.networkService);
 
   @override
-  Future<List<Device>> getDevices() async {
-    final res = await networkService.get(
-        "https://jsonplaceholder.typicode.com/photos");
+  Future<List<Event>> getEvents() async {
+    /*final res = await networkService
+        .get("https://jsonplaceholder.typicode.com/photos");
     if (res is Left) {
       log("Error occurred");
       return [];
@@ -24,11 +24,11 @@ class DevicesRepositoryImpl extends DevicesRepository{
     else {
       final data = ((res as Right).value as Response).data;
       if (data is List) {
-        return data.map((e) => Device.fromMap(e)).toList();
+        return data.map((e) => Event.fromJson(e)).toList();
       }
-      else {
+      else {*/
         return [];
-      }
-    }
+     /* }
+    }*/
   }
 }

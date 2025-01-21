@@ -1,6 +1,3 @@
-
-
-
 import '../domain/model/enums/app_type.dart';
 
 abstract class EnvInfo {

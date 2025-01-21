@@ -1,176 +1,198 @@
+import 'package:capp_mobile/shared/theme/app_colors.dart';
 import 'package:flutter/material.dart';
-import 'package:f11_flutter/shared/constants/sizes.dart';
 
-/// A class that defines the text styles used in the app.
-class AppTextStyles {
-  /// The default font family used for text in the app.
-  static const String fontFamily = 'ProximaNova';
+/// The [AppTypography] class provides predefined text styles
+/// used throughout the app.
+/// The [Styles] class provides direct access to text styles.
 
-  /// A text style for bold Heading 1.
-  ///
-  /// This style is typically used for large and bold headings with a font size of 50,
-  /// a bold font weight (w700), and a line height of 1. It creates a prominent and attention-grabbing heading.
-  static const TextStyle heading1Bold =
-      TextStyle(fontSize: size_50, fontWeight: FontWeight.w700, height: size_1);
+class AppTypography {
+  static const String baseFontFamily = 'Poppins';
 
-  /// A text style for semi-bold Heading 1.
-  ///
-  /// This style is similar to [heading1Bold] but with a slightly lighter font weight (w600).
-  /// It is suitable for headings that need to be prominent but not as bold as [heading1Bold].
-  static const TextStyle heading1SemiBold =
-      TextStyle(fontSize: size_50, fontWeight: FontWeight.w600, height: size_1);
+  // Theme text styles
+  static const TextTheme lightTextTheme = TextTheme(
+    displayLarge: TextStyle(
+      fontSize: 66,
+      fontWeight: FontWeight.bold,
+      fontFamily: baseFontFamily,
+      color: colorBlack
+    ),
+    displayMedium: TextStyle(
+      fontSize: 56,
+      fontWeight: FontWeight.normal,
+      fontFamily: baseFontFamily,
+      color: colorBlack
+    ),
+    displaySmall: TextStyle(
+      fontSize: 48,
+      fontWeight: FontWeight.w200,
+      fontFamily: baseFontFamily,
+      color: colorBlack
+    ),
+    headlineLarge: TextStyle(
+      fontSize: 42,
+      fontWeight: FontWeight.bold,
+      fontFamily: baseFontFamily,
+      color: colorBlack
+    ),
+    headlineMedium: TextStyle(
+      fontSize: 36,
+      fontWeight: FontWeight.normal,
+      fontFamily: baseFontFamily,
+      color: colorBlack
+    ),
+    headlineSmall: TextStyle(
+      fontSize: 32,
+      fontWeight: FontWeight.w200,
+      fontFamily: baseFontFamily,
+      color: colorBlack
+    ),
+    titleLarge: TextStyle(
+      fontSize: 24,
+      fontWeight: FontWeight.bold,
+      fontFamily: baseFontFamily,
+      color: colorBlack
+    ),
+    titleMedium: TextStyle(
+      fontSize: 16,
+      fontWeight: FontWeight.normal,
+      fontFamily: baseFontFamily,
+      color: colorBlack
+    ),
+    titleSmall: TextStyle(
+      fontSize: 14,
+      fontWeight: FontWeight.w200,
+      fontFamily: baseFontFamily,
+      color: colorBlack
+    ),
+    bodyLarge: TextStyle(
+      fontSize: 16,
+      fontWeight: FontWeight.bold,
+      fontFamily: baseFontFamily,
+      color: colorBlack
+    ),
+    bodyMedium: TextStyle(
+      fontSize: 14,
+      fontWeight: FontWeight.normal,
+      fontFamily: baseFontFamily,
+      color: colorBlack
+    ),
+    bodySmall: TextStyle(
+      fontSize: 12,
+      fontWeight: FontWeight.w200,
+      fontFamily: baseFontFamily,
+      color: colorBlack
+    ),
+    labelLarge: TextStyle(
+      fontSize: 14,
+      fontWeight: FontWeight.bold,
+      fontFamily: baseFontFamily,
+      color: colorBlack
+    ),
+    labelMedium: TextStyle(
+      fontSize: 12,
+      fontWeight: FontWeight.normal,
+      fontFamily: baseFontFamily,
+      color: colorBlack
+    ),
+    labelSmall: TextStyle(
+      fontSize: 10,
+      fontWeight: FontWeight.w200,
+      fontFamily: baseFontFamily,
+      color: colorBlack
+    ),
+  );
 
-  /// A text style for regular Heading 1.
-  ///
-  /// This style is typically used for standard heading 1 texts.
-  /// It has a font size of 50, a normal font weight (w400), and a line height of 1.
-  static const TextStyle heading1Regular =
-      TextStyle(fontSize: size_50, fontWeight: FontWeight.w400, height: size_1);
+  static const TextTheme darkTextTheme = TextTheme(
+    displayLarge: TextStyle(
+        fontSize: 66,
+        fontWeight: FontWeight.bold,
+        fontFamily: baseFontFamily,
+        color: colorBlackSecondVariant
+    ),
+    displayMedium: TextStyle(
+        fontSize: 56,
+        fontWeight: FontWeight.normal,
+        fontFamily: baseFontFamily,
+        color: colorBlackSecondVariant
+    ),
+    displaySmall: TextStyle(
+        fontSize: 48,
+        fontWeight: FontWeight.w200,
+        fontFamily: baseFontFamily,
+        color: colorBlackSecondVariant
+    ),
+    headlineLarge: TextStyle(
+        fontSize: 42,
+        fontWeight: FontWeight.bold,
+        fontFamily: baseFontFamily,
+        color: colorBlackSecondVariant
+    ),
+    headlineMedium: TextStyle(
+        fontSize: 36,
+        fontWeight: FontWeight.normal,
+        fontFamily: baseFontFamily,
+        color: colorBlackSecondVariant
+    ),
+    headlineSmall: TextStyle(
+        fontSize: 32,
+        fontWeight: FontWeight.w200,
+        fontFamily: baseFontFamily,
+        color: colorBlackSecondVariant
+    ),
+    titleLarge: TextStyle(
+        fontSize: 24,
+        fontWeight: FontWeight.bold,
+        fontFamily: baseFontFamily,
+        color: colorBlackSecondVariant
+    ),
+    titleMedium: TextStyle(
+        fontSize: 16,
+        fontWeight: FontWeight.normal,
+        fontFamily: baseFontFamily,
+        color: colorBlackSecondVariant
+    ),
+    titleSmall: TextStyle(
+        fontSize: 14,
+        fontWeight: FontWeight.w200,
+        fontFamily: baseFontFamily,
+        color: colorBlackSecondVariant
+    ),
+    bodyLarge: TextStyle(
+        fontSize: 16,
+        fontWeight: FontWeight.bold,
+        fontFamily: baseFontFamily,
+        color: colorBlackSecondVariant
+    ),
+    bodyMedium: TextStyle(
+        fontSize: 14,
+        fontWeight: FontWeight.normal,
+        fontFamily: baseFontFamily,
+        color: colorBlackSecondVariant
+    ),
+    bodySmall: TextStyle(
+        fontSize: 12,
+        fontWeight: FontWeight.w200,
+        fontFamily: baseFontFamily,
+        color: colorBlackSecondVariant
+    ),
+    labelLarge: TextStyle(
+        fontSize: 14,
+        fontWeight: FontWeight.bold,
+        fontFamily: baseFontFamily,
+        color: colorBlackSecondVariant
+    ),
+    labelMedium: TextStyle(
+        fontSize: 12,
+        fontWeight: FontWeight.normal,
+        fontFamily: baseFontFamily,
+        color: colorBlackSecondVariant
+    ),
+    labelSmall: TextStyle(
+        fontSize: 10,
+        fontWeight: FontWeight.w200,
+        fontFamily: baseFontFamily,
+        color: colorBlackSecondVariant
+    ),
+  );
 
-  /// A text style for bold Heading 2.
-  ///
-  /// This style is typically used for headings with a font size of 33, a bold font weight (w700),
-  /// and a line height of 1. It creates a bold and prominent heading.
-  static const TextStyle heading2Bold =
-      TextStyle(fontSize: size_33, fontWeight: FontWeight.w700, height: size_1);
-
-  /// A text style for semi-bold Heading 2.
-  ///
-  /// This style is similar to [heading2Bold] but with a slightly lighter font weight (w600).
-  /// It is suitable for headings that need to be prominent but not as bold as [heading2Bold].
-  static const TextStyle heading2SemiBold =
-      TextStyle(fontSize: size_33, fontWeight: FontWeight.w600, height: size_1);
-
-  /// A text style for regular Heading 2.
-  ///
-  /// This style is typically used for standard heading 2 texts.
-  /// It has a font size of 33, a normal font weight (w400), and a line height of 1.
-  static const TextStyle heading2Regular =
-      TextStyle(fontSize: size_33, fontWeight: FontWeight.w400, height: size_1);
-
-  /// A text style for bold Heading 3.
-  ///
-  /// This style is typically used for headings with a font size of 22, a bold font weight (w700),
-  /// and a line height of 1. It creates a bold and prominent heading.
-  static const TextStyle heading3Bold =
-      TextStyle(fontSize: size_22, fontWeight: FontWeight.w700, height: size_1);
-
-  /// A text style for semi-bold Heading 3.
-  ///
-  /// This style is similar to [heading3Bold] but with a slightly lighter font weight (w600).
-  /// It is suitable for headings that need to be prominent but not as bold as [heading3Bold].
-  static const TextStyle heading3SemiBold =
-      TextStyle(fontSize: size_22, fontWeight: FontWeight.w600, height: size_1);
-
-  /// A text style for regular Heading 3.
-  ///
-  /// This style is typically used for standard heading 3 texts.
-  /// It has a font size of 22, a normal font weight (w400), and a line height of 1.
-  static const TextStyle heading3Regular =
-      TextStyle(fontSize: size_22, fontWeight: FontWeight.w400, height: size_1);
-
-  /// A text style for bold Heading 4.
-  ///
-  /// This style is typically used for headings with a font size of 20, a bold font weight (w700),
-  /// and a line height of 1. It creates a bold and prominent heading.
-  static const TextStyle heading4Bold =
-      TextStyle(fontSize: size_20, fontWeight: FontWeight.w700, height: size_1);
-
-  /// A text style for semi-bold Heading 4.
-  ///
-  /// This style is similar to [heading4Bold] but with a slightly lighter font weight (w600).
-  /// It is suitable for headings that need to be prominent but not as bold as [heading4Bold].
-  static const TextStyle heading4SemiBold =
-      TextStyle(fontSize: size_20, fontWeight: FontWeight.w600, height: size_1);
-
-  /// A text style for regular Heading 4.
-  ///
-  /// This style is typically used for standard heading 4 texts.
-  /// It has a font size of 20, a normal font weight (w400), and a line height of 1.
-  static const TextStyle heading4Regular =
-      TextStyle(fontSize: size_20, fontWeight: FontWeight.w400, height: size_1);
-
-  /// A text style for bold Heading 5.
-  ///
-  /// This style is typically used for headings with a font size of 18, a bold font weight (w700),
-  /// and a line height of 1. It creates a bold and prominent heading.
-  static const TextStyle heading5Bold =
-      TextStyle(fontSize: size_18, fontWeight: FontWeight.w700, height: size_1);
-
-  /// A text style for semi-bold Heading 5.
-  ///
-  /// This style is similar to [heading5Bold] but with a slightly lighter font weight (w600).
-  /// It is suitable for headings that need to be prominent but not as bold as [heading5Bold].
-  static const TextStyle heading5SemiBold =
-      TextStyle(fontSize: size_18, fontWeight: FontWeight.w600, height: size_1);
-
-  /// A text style for regular Heading 5.
-  ///
-  /// This style is typically used for standard heading 5 texts.
-  /// It has a font size of 18, a normal font weight (w400), and a line height of 1.
-  static const TextStyle heading5Regular =
-      TextStyle(fontSize: size_18, fontWeight: FontWeight.w400, height: size_1);
-
-  /// A text style for bold Heading 6.
-  ///
-  /// This style is typically used for headings with a font size of 17, a bold font weight (w700),
-  /// and a line height of 1. It creates a bold and prominent heading.
-  static const TextStyle heading6Bold =
-      TextStyle(fontSize: size_17, fontWeight: FontWeight.w700, height: size_1);
-
-  /// A text style for semi-bold Heading 6.
-  ///
-  /// This style is similar to [heading6Bold] but with a slightly lighter font weight (w600).
-  /// It is suitable for headings that need to be prominent but not as bold as [heading6Bold].
-  static const TextStyle heading6SemiBold =
-      TextStyle(fontSize: size_17, fontWeight: FontWeight.w600, height: size_1);
-
-  /// A text style for regular Heading 6.
-  ///
-  /// This style is typically used for standard heading 6 texts.
-  /// It has a font size of 17, a normal font weight (w400), and a line height of 1.
-  static const TextStyle heading6Regular =
-      TextStyle(fontSize: size_17, fontWeight: FontWeight.w400, height: size_1);
-
-  /// A text style for bold Heading 7.
-  ///
-  /// This style is typically used for headings with a font size of 15, a bold font weight (w700),
-  /// and a line height of 1. It creates a bold and prominent heading.
-  static const TextStyle heading7Bold =
-      TextStyle(fontSize: size_15, fontWeight: FontWeight.w700, height: size_1);
-
-  /// A text style for semi-bold Heading 7.
-  ///
-  /// This style is similar to [heading7Bold] but with a slightly lighter font weight (w600).
-  /// It is suitable for headings that need to be prominent but not as bold as [heading7Bold].
-  static const TextStyle heading7SemiBold =
-      TextStyle(fontSize: size_15, fontWeight: FontWeight.w600, height: size_1);
-
-  /// A text style for regular Heading 7.
-  ///
-  /// This style is typically used for standard heading 7 texts.
-  /// It has a font size of 15, a normal font weight (w400), and a line height of 1.
-  static const TextStyle heading7Regular =
-      TextStyle(fontSize: size_15, fontWeight: FontWeight.w400, height: size_1);
-
-  /// A text style for bold Heading 8.
-  ///
-  /// This style is typically used for headings with a font size of 13, a bold font weight (w700),
-  /// and a line height of 1. It creates a bold and prominent heading.
-  static const TextStyle heading8Bold =
-      TextStyle(fontSize: size_13, fontWeight: FontWeight.w700, height: size_1);
-
-  /// A text style for semi-bold Heading 8.
-  ///
-  /// This style is similar to [heading8Bold] but with a slightly lighter font weight (w600).
-  /// It is suitable for headings that need to be prominent but not as bold as [heading8Bold].
-  static const TextStyle heading8SemiBold =
-      TextStyle(fontSize: size_13, fontWeight: FontWeight.w600, height: size_1);
-
-  /// A text style for regular Heading 8.
-  ///
-  /// This style is typically used for standard heading 8 texts.
-  /// It has a font size of 13, a normal font weight (w400), and a line height of 1.
-  static const TextStyle heading8Regular =
-      TextStyle(fontSize: size_13, fontWeight: FontWeight.w400, height: size_1);
 }

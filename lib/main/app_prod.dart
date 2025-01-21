@@ -1,4 +1,3 @@
-
 import '../domain/model/enums/app_type.dart';
 import '../main.dart';
 

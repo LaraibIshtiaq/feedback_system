@@ -1,53 +1,84 @@
 import 'package:flutter/material.dart';
 
-/// The [AppColors] class provides a set of predefined colors used throughout the app.
+/// This color represents primary color of app that is Blue.
+const Color colorBlue = Color(0xFF2D66A9);
+
+/// This color represents a light shade of white.
+const Color colorBlueFirstVariant = Color(0xFFEFF3F9);
+
+/// This color representing first gradient color for primary button
+const Color colorBlueGradientFirst = Color(0xFF428BE1);
+
+/// This color representing second gradient color for primary button
+const Color colorBlueGradientSecond = Color(0xFF265A98);
+
+/// This color represents a black color.
+const Color colorBlack = Colors.black;
+
+/// Text primary color
+const Color colorBlackFirstVariant = Color(0xFF1B2128);
+
+/// Text secondary color
+const Color colorBlackSecondVariant = Color(0xFF737373);
+
+/// This color represents a light shade of gray.
+const Color colorGrey = Color(0xFF272626);
+
+/// This color represents a granite gray shade.
+const Color colorGreyFirstVariant = Color(0xFF484C52);
+
+/// This color represents a super light shade of gray.
+const Color colorGreyThirdVariant = Color(0xFF8E9AAB);
+
+/// This color represents a lighter shade of powder blue
+const Color colorBackground = Color(0xFFFBFCFE);
+
+/// This color represents a white color.
+const Color colorWhite = Colors.white;
+
+/// This color represents a white color.
+const Color colorWhiteFirstVariant = Colors.white;
+
+/// This color represents a white color.
+const Color colorWhiteSecondVariant = Colors.white;
+
+/// This color represents a red color for error indication.
+const Color colorRed = Colors.red;
+
+/// This color represents a primary color of text
+const Color colorTextPrimary = colorBlackFirstVariant;
+
+/// This color represents a secondary color of text
+const Color colorTextSecondary = colorBlackSecondVariant;
+
+Color lightFocusColor = Colors.black.withOpacity(0.12);
+Color darkFocusColor = Colors.white.withOpacity(0.12);
+
 class AppColors {
+  static final Color lightFocusColor = colorBlueFirstVariant;
+  static final Color darkFocusColor = Colors.white.withOpacity(0.12);
 
-  /// This color represents a light shade of white.
-  static const Color white = Color(0xFFFFFFFF);
+  static const ColorScheme lightColorScheme = ColorScheme(
+    primary: colorBlue,
+    onPrimary: colorBlack,
+    secondary: colorWhite,
+    onSecondary: colorRed,
+    error: colorRed,
+    onError: colorWhite,
+    surface: colorBackground,
+    onSurface: colorGreyFirstVariant,
+    brightness: Brightness.light,
+  );
 
-  /// This color represents a light shade of white.
-  static const Color halfWhite = Color(0xFFF1F1F1);
-
-  /// This color represents a dark shade of gray.
-  static const Color black = Color(0xFF262626);
-
-  /// This color represents a light shade of gray.
-  static const Color lightGrey = Color(0xFF545454);
-
-  /// This color represents a granite gray shade.
-  static const Color dimGrey = Color(0xFF666666);
-
-  /// This color represents a super light shade of gray.
-  static const Color superLightGrey = Color(0xFFE8E8E8);
-
-  /// This color represents a purple shade.
-  static const Color purple = Color(0xFFA914CC);
-
-  /// This color represents a fuschia shade.
-  static const Color magenta = Color(0xFFFF00FF);
-
-  /// This color represents a fuschia pink shade.
-  static const Color lightPink = Color(0xFFFF7AFC);
-
-  /// This color represents a denim shade.
-  static const Color blue = Color(0xFF0C60BC);
-
-  /// This color represents an electric ultramarine shade.
-  static const Color vividViolet = Color(0xFF3F00FF);
-
-  /// This color represents an aqua shade.
-  static const Color brightCyan = Color(0xFF00E7FF);
-
-  /// This color represents an orange-red shade.
-  static const Color lightRed = Color(0xFFFF4D4D);
-
-  /// This color represents a dark orange shade.
-  static const Color vividOrange = Color(0xFFFF7F00);
-
-  /// This color represents a yellow shade.
-  static const Color yellow = Color(0xFFFFFF00);
-
-  /// This color represents a dark green shade.
-  static const Color greenColor = Color(0xFF02CC66);
+  static const ColorScheme darkColorScheme = ColorScheme(
+    primary: colorBlue,
+    onPrimary: colorWhite,
+    secondary: colorGrey,
+    onSecondary: colorGreyFirstVariant,
+    surface: colorGreyThirdVariant,
+    onSurface: colorBlackFirstVariant,
+    error: colorRed,
+    onError: colorBlack,
+    brightness: Brightness.dark,
+  );
 }

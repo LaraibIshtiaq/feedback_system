@@ -3,10 +3,10 @@ import 'dart:developer';
 import 'dart:io';
 import 'package:dartz/dartz.dart';
 import 'package:dio/dio.dart';
-import 'package:f11_flutter/shared/constants/integers.dart';
-import 'package:f11_flutter/data/remote/remote.dart';
-import 'package:f11_flutter/core/response.dart' as response;
-import 'package:f11_flutter/shared/exceptions/http_exception.dart';
+import 'package:capp_mobile/shared/constants/integers.dart';
+import 'package:capp_mobile/data/remote/remote.dart';
+import 'package:capp_mobile/core/response.dart' as response;
+import 'package:capp_mobile/shared/exceptions/http_exception.dart';
 
 mixin ExceptionHandlerMixin on NetworkService {
   Future<Either<AppException, response.Response>>

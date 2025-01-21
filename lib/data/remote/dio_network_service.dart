@@ -2,10 +2,10 @@ import 'dart:io';
 import 'package:dartz/dartz.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
-import 'package:f11_flutter/data/remote/network_service.dart';
-import 'package:f11_flutter/main/app_env.dart';
-import 'package:f11_flutter/shared/exceptions/http_exception.dart';
-import 'package:f11_flutter/shared/mixins/exception_handler_mixin.dart';
+import 'package:capp_mobile/data/remote/network_service.dart';
+import 'package:capp_mobile/main/app_env.dart';
+import 'package:capp_mobile/shared/exceptions/http_exception.dart';
+import 'package:capp_mobile/shared/mixins/exception_handler_mixin.dart';
 
 import '../../core/response.dart' as response;
 

@@ -1,6 +1,6 @@
 {
-    "name": "f11_flutter",
-    "short_name": "f11_flutter",
+    "name": "capp_mobile",
+    "short_name": "capp_mobile",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

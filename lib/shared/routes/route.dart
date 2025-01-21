@@ -1,6 +1,5 @@
 import 'package:auto_route/auto_route.dart';
-import 'package:f11_flutter/features/login/screen/signup_screen.dart';
-import 'package:f11_flutter/shared/routes/route.gr.dart';
+import 'package:capp_mobile/shared/routes/route.gr.dart';
 
 @AutoRouterConfig()
 class AppRouter extends RootStackRouter {

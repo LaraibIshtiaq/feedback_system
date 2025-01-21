@@ -9,11 +9,11 @@
 
 // ignore_for_file: no_leading_underscores_for_library_prefixes
 import 'package:auto_route/auto_route.dart' as _i6;
-import 'package:f11_flutter/features/home/home_screen.dart' as _i2;
-import 'package:f11_flutter/features/login/screen/forget_password.dart' as _i1;
-import 'package:f11_flutter/features/login/screen/login_screen.dart' as _i3;
-import 'package:f11_flutter/features/login/screen/signup_screen.dart' as _i4;
-import 'package:f11_flutter/features/splash/screens/splash_screen.dart' as _i5;
+import 'package:capp_mobile/features/home/home_screen.dart' as _i2;
+import 'package:capp_mobile/features/login/screen/forget_password.dart' as _i1;
+import 'package:capp_mobile/features/login/screen/login_screen.dart' as _i3;
+import 'package:capp_mobile/features/login/screen/signup_screen.dart' as _i4;
+import 'package:capp_mobile/features/splash/screens/splash_screen.dart' as _i5;
 
 /// generated route for
 /// [_i1.ForgetPasswordScreen]

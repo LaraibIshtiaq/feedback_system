@@ -1,5 +1,5 @@
-import '../model/ui_dto/device.dart';
+import '../model/ui_dto/event.dart';
 
-abstract class DevicesRepository {
-  Future<List<Device>> getDevices();
+abstract class EventRepository {
+  Future<List<Event>> getEvents();
 }

@@ -1,23 +1,22 @@
-import 'package:f11_flutter/domain/model/ui_dto/device.dart';
+import 'package:capp_mobile/domain/model/ui_dto/event.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-var devicesProvider = StateNotifierProvider
-    .autoDispose<DevicesNotifier, List<Device>>
-  ((ref) => DevicesNotifier());
+var eventProvider = StateNotifierProvider.autoDispose<EventNotifier, List<Event>>
+  ((ref) => EventNotifier());
 
-class DevicesNotifier extends StateNotifier<List<Device>> {
-  DevicesNotifier(): super([]);
+class EventNotifier extends StateNotifier<List<Event>> {
+  EventNotifier(): super([]);
 
-  void add(Device device) {
-    state.add(device);
+  void addEvent(Event event) {
+    state.add(event);
   }
 
-  void remove(int deviceId) {
-    state.removeWhere((element) => element.id == deviceId,);
+  void removeEvent(int eventId) {
+    state.removeWhere((element) => element.eventId == eventId);
     state = List.from(state);
   }
 
-  void replaceAll(List<Device> devices) {
-    state = devices;
+  void replaceAllEvents(List<Event> newEvents) {
+    state = newEvents;
   }
 }
