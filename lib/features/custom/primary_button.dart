@@ -1,9 +1,9 @@
 import 'package:capp_mobile/shared/theme/app_colors.dart';
 import 'package:capp_mobile/shared/theme/app_dimens.dart';
-import 'package:capp_mobile/shared/theme/text_styles.dart';
+import 'package:capp_mobile/shared/theme/gradients.dart';
 import 'package:flutter/material.dart';
 
-/// A custom button widget for CAPP app.
+/// The primary button widget for CAPP app.
 ///
 /// This button widget displays a text label inside an elevated button
 /// with customizable properties.
@@ -29,6 +29,9 @@ class PrimaryButton extends StatelessWidget {
   /// Elevation of button if needed
   final double? elevation;
 
+  ///Padding if you want to customize
+  final double? padding;
+
   /// Creates a CAPP Primary Button with the given parameters.
   const PrimaryButton({
     super.key,
@@ -38,44 +41,34 @@ class PrimaryButton extends StatelessWidget {
     required this.onPressed,
     this.enable = true,
     this.elevation,
-    this.onDisabledPressed});
+    this.onDisabledPressed,
+  this.padding});
 
   @override
   Widget build(BuildContext context) {
     return Container(
+      width: MediaQuery.of(context).size.width,
+        height: dimensions.buttonHeightPrimary,
         decoration: BoxDecoration(
-          gradient: LinearGradient(
-            colors: [
-              colorBlueGradientFirst,
-              colorBlueGradientSecond,
-            ],
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight,
-          ),
-          borderRadius: BorderRadius.circular(dimensions.cornerRadiusPrimary),
+          gradient: enable ? primaryGradient : null,
+          color: enable ? null : colorGrey.withOpacity(0.2),
+          borderRadius: BorderRadius.circular(dimensions.cornerRadiusSecondary),
         ),
         child: ElevatedButton(
           style: ElevatedButton.styleFrom(
-            fixedSize: size,
-            backgroundColor: enable
-                ? backgroundColor ?? Theme.of(context).primaryColor
-                : Theme.of(context).secondaryHeaderColor,
-            elevation: elevation ?? dimensions.elevation,
+            backgroundColor: Colors.transparent,
+            elevation: 0,
             shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(
-                    dimensions.cornerRadiusPrimary),
-                side: BorderSide(
-                    color: Theme.of(context).primaryColor)),
+                    dimensions.cornerRadiusSecondary)),
           ),
           onPressed: enable ? onPressed : onDisabledPressed,
           child: Padding(
-            padding: EdgeInsets.all(dimensions.spacingMedium),
+            padding: EdgeInsets.all(padding ?? dimensions.spacingMedium),
             child: Text(buttonText,
                 textAlign: TextAlign.center,
-                style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                    color: enable
-                        ? Theme.of(context).primaryColor
-                        : Theme.of(context).secondaryHeaderColor)),
+                style: Theme.of(context).textTheme.displaySmall
+                    ?.copyWith(color: colorWhite)),
           ),
         )
     );

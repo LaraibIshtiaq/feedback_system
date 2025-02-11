@@ -14,184 +14,234 @@ class AppTypography {
       fontSize: 66,
       fontWeight: FontWeight.bold,
       fontFamily: baseFontFamily,
-      color: colorBlack
+      color: colorTextPrimaryLight
     ),
     displayMedium: TextStyle(
       fontSize: 56,
       fontWeight: FontWeight.normal,
       fontFamily: baseFontFamily,
-      color: colorBlack
+      color: colorTextPrimaryLight
     ),
+    // Used in Event list for Event name, -- HEADING(16)
     displaySmall: TextStyle(
-      fontSize: 48,
-      fontWeight: FontWeight.w200,
+      fontSize: 16,
+      fontWeight: FontWeight.w600,
       fontFamily: baseFontFamily,
-      color: colorBlack
+      color: colorTextPrimaryLight
     ),
+
+
+    // Used in title heading of screens -- HEADING(18)
     headlineLarge: TextStyle(
-      fontSize: 42,
-      fontWeight: FontWeight.bold,
-      fontFamily: baseFontFamily,
-      color: colorBlack
+        fontSize: 18,
+        fontWeight: FontWeight.w600, //Semi-bold
+        fontFamily: baseFontFamily,
+        color: colorTextPrimaryLight
     ),
+
+    // Used in Calendar headings -- HEADING(20)
     headlineMedium: TextStyle(
-      fontSize: 36,
-      fontWeight: FontWeight.normal,
-      fontFamily: baseFontFamily,
-      color: colorBlack
+        fontSize: 20,
+        fontWeight: FontWeight.w600, //Semi-bold
+        fontFamily: baseFontFamily,
+        color: colorTextPrimaryLight
     ),
+
+    // Used in Project Heading on top -- HEADING(22)
     headlineSmall: TextStyle(
-      fontSize: 32,
-      fontWeight: FontWeight.w200,
-      fontFamily: baseFontFamily,
-      color: colorBlack
+        fontSize: 22,
+        fontWeight: FontWeight.w600, //Semi-bold
+        fontFamily: baseFontFamily,
+        color: colorTextPrimaryLight
     ),
+
+
     titleLarge: TextStyle(
       fontSize: 24,
       fontWeight: FontWeight.bold,
       fontFamily: baseFontFamily,
-      color: colorBlack
+      color: colorTextPrimaryLight
     ),
+    //Used in dialog title -- BOLD(18)
     titleMedium: TextStyle(
-      fontSize: 16,
-      fontWeight: FontWeight.normal,
+      fontSize: 18,
+      fontWeight: FontWeight.bold,
       fontFamily: baseFontFamily,
-      color: colorBlack
+      color: colorTextPrimaryLight
     ),
     titleSmall: TextStyle(
       fontSize: 14,
-      fontWeight: FontWeight.w200,
+      fontWeight: FontWeight.bold,
       fontFamily: baseFontFamily,
-      color: colorBlack
+      color: colorTextPrimaryLight
     ),
+
+    // Used in Dropdowns  -- MEDIUM(16)
     bodyLarge: TextStyle(
       fontSize: 16,
-      fontWeight: FontWeight.bold,
+      fontWeight: FontWeight.w500,
       fontFamily: baseFontFamily,
-      color: colorBlack
+      color: colorTextPrimaryLight
     ),
+    // Used in texts like Events: December 2 -- MEDIUM(14)
     bodyMedium: TextStyle(
       fontSize: 14,
-      fontWeight: FontWeight.normal,
+      fontWeight: FontWeight.w500,
       fontFamily: baseFontFamily,
-      color: colorBlack
+      color: colorTextPrimaryLight
     ),
+    // Used in  -- MEDIUM(22)
     bodySmall: TextStyle(
       fontSize: 12,
-      fontWeight: FontWeight.w200,
+      fontWeight: FontWeight.w500,
       fontFamily: baseFontFamily,
-      color: colorBlack
+      color: colorTextPrimaryLight
     ),
+
+
+    //Used in  -- REGULAR()
     labelLarge: TextStyle(
-      fontSize: 14,
-      fontWeight: FontWeight.bold,
-      fontFamily: baseFontFamily,
-      color: colorBlack
-    ),
-    labelMedium: TextStyle(
-      fontSize: 12,
+      fontSize: 18,
       fontWeight: FontWeight.normal,
       fontFamily: baseFontFamily,
-      color: colorBlack
+      color: colorTextPrimaryLight
     ),
-    labelSmall: TextStyle(
-      fontSize: 10,
-      fontWeight: FontWeight.w200,
+    //Used in calendar dates -- REGULAR(16)
+    labelMedium: TextStyle(
+      fontSize: 16,
+      fontWeight: FontWeight.normal,
       fontFamily: baseFontFamily,
-      color: colorBlack
+      color: colorTextPrimaryLight
+    ),
+    //Used in Events List for dates -- REGULAR(14)
+    labelSmall: TextStyle(
+      fontSize: 14,
+      fontWeight: FontWeight.normal,
+      fontFamily: baseFontFamily,
+      color: colorTextSecondaryLight
     ),
   );
 
   static const TextTheme darkTextTheme = TextTheme(
+
+
+
     displayLarge: TextStyle(
         fontSize: 66,
         fontWeight: FontWeight.bold,
         fontFamily: baseFontFamily,
-        color: colorBlackSecondVariant
+        color: colorTextPrimaryDark
     ),
+
     displayMedium: TextStyle(
         fontSize: 56,
         fontWeight: FontWeight.normal,
         fontFamily: baseFontFamily,
-        color: colorBlackSecondVariant
+        color: colorTextPrimaryDark
     ),
+    // Used in Event list for Event name, -- HEADING(16)
     displaySmall: TextStyle(
-        fontSize: 48,
-        fontWeight: FontWeight.w200,
+        fontSize: 16,
+        fontWeight: FontWeight.w600,
         fontFamily: baseFontFamily,
-        color: colorBlackSecondVariant
+        color: colorTextPrimaryDark
     ),
+
+
+
+    // Used in title heading of screens -- HEADING(18)
     headlineLarge: TextStyle(
-        fontSize: 42,
-        fontWeight: FontWeight.bold,
+        fontSize: 18,
+        fontWeight: FontWeight.w600, //Semi-bold
         fontFamily: baseFontFamily,
-        color: colorBlackSecondVariant
+        color: colorTextPrimaryDark
     ),
+
+    // Used in Calendar headings -- HEADING(20)
     headlineMedium: TextStyle(
-        fontSize: 36,
-        fontWeight: FontWeight.normal,
+        fontSize: 20,
+        fontWeight: FontWeight.w600, //Semi-bold
         fontFamily: baseFontFamily,
-        color: colorBlackSecondVariant
+        color: colorTextPrimaryDark
     ),
+
+    // Used in Project Heading on top -- HEADING(22)
     headlineSmall: TextStyle(
-        fontSize: 32,
-        fontWeight: FontWeight.w200,
+        fontSize: 22,
+        fontWeight: FontWeight.w600, //Semi-bold
         fontFamily: baseFontFamily,
-        color: colorBlackSecondVariant
+        color: colorTextPrimaryDark
     ),
+
+
+
+
     titleLarge: TextStyle(
         fontSize: 24,
         fontWeight: FontWeight.bold,
         fontFamily: baseFontFamily,
-        color: colorBlackSecondVariant
+        color: colorTextPrimaryDark
     ),
+    //Used in dialog title -- BOLD(18)
     titleMedium: TextStyle(
-        fontSize: 16,
-        fontWeight: FontWeight.normal,
+        fontSize: 18,
+        fontWeight: FontWeight.bold,
         fontFamily: baseFontFamily,
-        color: colorBlackSecondVariant
+        color: colorTextPrimaryDark
     ),
     titleSmall: TextStyle(
         fontSize: 14,
-        fontWeight: FontWeight.w200,
+        fontWeight: FontWeight.bold,
         fontFamily: baseFontFamily,
-        color: colorBlackSecondVariant
+        color: colorTextPrimaryLight
     ),
+
+
+    // Used in Dropdowns  -- MEDIUM(16)
     bodyLarge: TextStyle(
         fontSize: 16,
-        fontWeight: FontWeight.bold,
+        fontWeight: FontWeight.w500,
         fontFamily: baseFontFamily,
-        color: colorBlackSecondVariant
+        color: colorTextPrimaryDark
     ),
+    // Used in texts like Events: December 2 -- MEDIUM(14)
     bodyMedium: TextStyle(
         fontSize: 14,
-        fontWeight: FontWeight.normal,
+        fontWeight: FontWeight.w500,
         fontFamily: baseFontFamily,
-        color: colorBlackSecondVariant
+        color: colorTextPrimaryDark
     ),
+    // Used in  -- MEDIUM(22)
     bodySmall: TextStyle(
         fontSize: 12,
-        fontWeight: FontWeight.w200,
+        fontWeight: FontWeight.w500,
         fontFamily: baseFontFamily,
-        color: colorBlackSecondVariant
+        color: colorTextPrimaryDark
     ),
+
+
+
+
+    //Used in  -- REGULAR()
     labelLarge: TextStyle(
-        fontSize: 14,
-        fontWeight: FontWeight.bold,
-        fontFamily: baseFontFamily,
-        color: colorBlackSecondVariant
-    ),
-    labelMedium: TextStyle(
-        fontSize: 12,
+        fontSize: 18,
         fontWeight: FontWeight.normal,
         fontFamily: baseFontFamily,
-        color: colorBlackSecondVariant
+        color: colorTextPrimaryDark
     ),
-    labelSmall: TextStyle(
-        fontSize: 10,
-        fontWeight: FontWeight.w200,
+    //Used in calendar dates -- REGULAR(16)
+    labelMedium: TextStyle(
+        fontSize: 16,
+        fontWeight: FontWeight.normal,
         fontFamily: baseFontFamily,
-        color: colorBlackSecondVariant
+        color: colorTextPrimaryDark
+    ),
+    //Used in Events List for dates -- REGULAR(14)
+    labelSmall: TextStyle(
+        fontSize: 14,
+        fontWeight: FontWeight.normal,
+        fontFamily: baseFontFamily,
+        color: colorTextSecondaryDark
     ),
   );
 

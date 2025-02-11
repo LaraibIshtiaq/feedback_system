@@ -1,6 +1,7 @@
 import 'package:capp_mobile/shared/routes/route.dart';
 import 'package:capp_mobile/shared/theme/app_dimens.dart';
 import 'package:capp_mobile/shared/theme/app_theme.dart';
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -34,12 +35,18 @@ class _MyAppState extends ConsumerState<MyApp> with WidgetsBindingObserver {
     return Consumer(
       builder: (context, ref, _){
         return MaterialApp.router(
-        title: 'CAPP - TEO Customer App',
-        debugShowCheckedModeBanner: false,
-        themeMode: ThemeMode.system,
-        theme: GlobalThemData.lightThemeData,
-        darkTheme: GlobalThemData.darkThemeData,
-        routerConfig: router.config(),
+          title: 'CAPP - TEO Customer App',
+          debugShowCheckedModeBanner: false,
+
+          localizationsDelegates: context.localizationDelegates,
+          /// Setting the supported locales
+          supportedLocales: context.supportedLocales,
+
+          themeMode: ThemeMode.system,
+          theme: GlobalThemData.lightThemeData,
+          darkTheme: GlobalThemData.darkThemeData,
+
+          routerConfig: router.config(),
         );
       }
     );

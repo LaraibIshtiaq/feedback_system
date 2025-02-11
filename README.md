@@ -15,7 +15,7 @@ For Android
 Add additional arguments in "Addition run args" in build configurations and flavor infront of main
 - e-g for dev
 - Dart entrypoint: <system specfic path>/lib/main/main_dev.dart
-- Additional run args: --flavor dev
+- Additional run args: --flavor development
 
 ## Routes
 AutoRoute: 

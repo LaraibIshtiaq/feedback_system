@@ -1,6 +1,6 @@
+import 'package:capp_mobile/core/response.dart';
 import 'package:dartz/dartz.dart';
 import 'package:equatable/equatable.dart';
-import 'package:capp_mobile/core/response.dart';
 
 import '../constants/integers.dart';
 

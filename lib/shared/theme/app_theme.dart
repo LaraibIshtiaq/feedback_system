@@ -6,21 +6,29 @@ class GlobalThemData {
   static ThemeData lightThemeData = themeData(
       AppColors.lightColorScheme,
       AppColors.lightFocusColor,
+      colorWhite,
       AppTypography.lightTextTheme
   );
   static ThemeData darkThemeData = themeData(
       AppColors.darkColorScheme,
       AppColors.darkFocusColor,
+      AppColors.darkFocusColor,
       AppTypography.darkTextTheme);
 
-  static ThemeData themeData(ColorScheme colorScheme, Color focusColor, TextTheme textTheme) {
+  static ThemeData themeData(
+      ColorScheme colorScheme,
+      Color focusColor,
+      Color cardColor,
+      TextTheme textTheme) {
+
     return ThemeData(
       colorScheme: colorScheme,
       primaryColor: colorScheme.primary,
       canvasColor: colorScheme.surface,
-      scaffoldBackgroundColor: colorScheme.surface,
+      scaffoldBackgroundColor: colorScheme.background,
       highlightColor: Colors.transparent,
-      focusColor: focusColor,
+      focusColor: focusColor,//Used as secondary color almost everywhere
+      cardColor: cardColor, //Used where cards are displayed e.g. Events List Items
       textTheme: textTheme,
     );
   }

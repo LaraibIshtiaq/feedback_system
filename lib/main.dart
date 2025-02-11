@@ -1,9 +1,9 @@
-import 'package:capp_mobile/shared/theme/app_dimens.dart';
-import 'package:easy_localization/easy_localization.dart';
 import 'package:capp_mobile/services/localization_service.dart';
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+
 import 'domain/model/enums/app_type.dart';
 import 'main/app.dart';
 import 'main/app_env.dart';

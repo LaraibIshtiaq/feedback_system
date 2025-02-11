@@ -28,9 +28,9 @@ extension _EnvProperties on AppEnvironment {
   };
 
   static const _connectionStrings = {
-    AppEnvironment.dev: '',
-    AppEnvironment.staging: '',
-    AppEnvironment.prod: '',
+    AppEnvironment.dev: "https://capp-be-dev.nicecliff-96f7c5c8.northeurope.azurecontainerapps.io/api",
+    AppEnvironment.staging: "https://capp-be-dev.nicecliff-96f7c5c8.northeurope.azurecontainerapps.io/api",
+    AppEnvironment.prod: "https://capp-be-dev.nicecliff-96f7c5c8.northeurope.azurecontainerapps.io/api",
   };
 
   static const _envs = {

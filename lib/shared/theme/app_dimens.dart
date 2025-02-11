@@ -13,10 +13,10 @@ class AppDimensions {
   }
 
   final double spacingSmallest;
-  final double spacingSmaller;
-  final double spacingSmall;
-  final double spacingNormal;
-  final double spacingMedium;
+  final double spacingSmaller; //8
+  final double spacingSmall; //10
+  final double spacingNormal; //14
+  final double spacingMedium; //16
   final double spacingLarge;
   final double spacingMediumLarge;
   final double spacingExtraLarge;
@@ -24,17 +24,21 @@ class AppDimensions {
   final double spacingLayoutMedium;
   final double spacingLayoutBottom;
   final double spacingLayoutTop;
-  final double spacingAddressIndicators;
-  final double spacingPoweredByGoogle;
+  final double floatingButtonSize;//60
+  final double iconSizePrimary;//24
+  final double iconSizeSecondary;//16
   final double buttonHeightPrimary;
   final double buttonHeightSecondary;
+  final double feedbackButtonHeight;
   final double textFieldHeightPrimary;
   final double textFieldHeightSecondary;
   final double textFieldSpacingSmall;
   final double textFieldSpacingMedium;
   final double textFieldSpacingLarge;
-  final double cornerRadiusPrimary;
-  final double cornerRadiusSecondary;
+  final double dropdownHeightPrimary;//60
+  final double cornerRadiusPrimary;//16//Used in dialogs
+  final double cornerRadiusSecondary;//8//Used in dropdown
+  final double cornerRadiusTertiary;//4//Used in calendar buttons
   final double cornerRadiusDialog;
   final double strokeWidthPrimary;
   final double strokeWidthSecondary;
@@ -45,6 +49,9 @@ class AppDimensions {
   final double appLogoNormal;
   final double appLogoSmall;
   final double elevation;
+  final double borderSidePrimary;
+  final double borderSideSecondary;
+  final double itemHeightPrimary;
 
   const AppDimensions({
     required this.spacingSmallest,
@@ -59,17 +66,21 @@ class AppDimensions {
     required this.spacingLayoutMedium,
     required this.spacingLayoutBottom,
     required this.spacingLayoutTop,
-    required this.spacingAddressIndicators,
-    required this.spacingPoweredByGoogle,
+    this.floatingButtonSize = 60,
+    this.iconSizePrimary = 24,
+    this.iconSizeSecondary = 16,
     required this.buttonHeightPrimary,
     required this.buttonHeightSecondary,
+    required this.feedbackButtonHeight,
     required this.textFieldHeightPrimary,
     required this.textFieldHeightSecondary,
     required this.textFieldSpacingSmall,
     required this.textFieldSpacingMedium,
     required this.textFieldSpacingLarge,
+    this.dropdownHeightPrimary = 60,
     required this.cornerRadiusPrimary,
     required this.cornerRadiusSecondary,
+    this.cornerRadiusTertiary = 4,
     required this.cornerRadiusDialog,
     required this.strokeWidthPrimary,
     required this.strokeWidthSecondary,
@@ -79,7 +90,10 @@ class AppDimensions {
     required this.appLogoLarge,
     required this.appLogoNormal,
     required this.appLogoSmall,
-    required this.elevation
+    required this.elevation,
+    this.borderSidePrimary = 1,
+    this.borderSideSecondary = 4, //used in event list item
+    this.itemHeightPrimary = 80,
   });
 }
 
@@ -91,22 +105,21 @@ const defaultDimensions = AppDimensions(
   spacingMedium: 16.0,
   spacingLarge: 24.0,
   spacingMediumLarge: 32.0,
-  spacingExtraLarge: 48.0,
+  spacingExtraLarge: 44.0,
   spacingLayoutNormal: 24.0,
   spacingLayoutMedium: 32.0,
-  spacingLayoutBottom: 40.0,
+  spacingLayoutBottom: 60.0,
   spacingLayoutTop: 56.0,
-  spacingAddressIndicators: 4.0,
-  spacingPoweredByGoogle: 62.0,
   buttonHeightPrimary: 56.0,
   buttonHeightSecondary: 48.0,
-  textFieldHeightPrimary: 58.0,
-  textFieldHeightSecondary: 64.0,
+  feedbackButtonHeight: 90.0,
+  textFieldHeightPrimary: 60.0,
+  textFieldHeightSecondary: 90.0,
   textFieldSpacingSmall: 2.0,
   textFieldSpacingMedium: 8.0,
   textFieldSpacingLarge: 12.0,
-  cornerRadiusPrimary: 8.0,
-  cornerRadiusSecondary: 6.0,
+  cornerRadiusPrimary: 16.0,
+  cornerRadiusSecondary: 8.0,
   cornerRadiusDialog: 12.0,
   strokeWidthPrimary: 1.0,
   strokeWidthSecondary: 1.5,
@@ -130,19 +143,18 @@ const smallDimensions = AppDimensions(
   spacingExtraLarge: 36.0,
   spacingLayoutNormal: 20.0,
   spacingLayoutMedium: 28.0,
-  spacingLayoutBottom: 24.0,
+  spacingLayoutBottom: 36.0,
   spacingLayoutTop: 32.0,
-  spacingAddressIndicators: 3.0,
-  spacingPoweredByGoogle: 60.0,
   buttonHeightPrimary: 52.0,
   buttonHeightSecondary: 40.0,
-  textFieldHeightPrimary: 52.0,
-  textFieldHeightSecondary: 58.0,
+  feedbackButtonHeight: 90.0,
+  textFieldHeightPrimary: 50.0,
+  textFieldHeightSecondary: 78.0,
   textFieldSpacingSmall: 2.0,
   textFieldSpacingMedium: 8.0,
   textFieldSpacingLarge: 12.0,
-  cornerRadiusPrimary: 8.0,
-  cornerRadiusSecondary: 6.0,
+  cornerRadiusPrimary: 16.0,
+  cornerRadiusSecondary: 8.0,
   cornerRadiusDialog: 12.0,
   strokeWidthPrimary: 1.0,
   strokeWidthSecondary: 1.5,

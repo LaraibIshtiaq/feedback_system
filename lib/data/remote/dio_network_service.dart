@@ -1,11 +1,12 @@
 import 'dart:io';
-import 'package:dartz/dartz.dart';
-import 'package:dio/dio.dart';
-import 'package:flutter/foundation.dart';
+
 import 'package:capp_mobile/data/remote/network_service.dart';
 import 'package:capp_mobile/main/app_env.dart';
 import 'package:capp_mobile/shared/exceptions/http_exception.dart';
 import 'package:capp_mobile/shared/mixins/exception_handler_mixin.dart';
+import 'package:dartz/dartz.dart';
+import 'package:dio/dio.dart';
+import 'package:flutter/foundation.dart';
 
 import '../../core/response.dart' as response;
 
@@ -81,5 +82,34 @@ class DioNetworkService extends NetworkService with ExceptionHandlerMixin {
     );
     return res;
   }
+
+  /// Performs a DELETE request to the specified [endpoint] with optional [data].
+  /// Returns a [Future] that completes with either an [AppException] if an error occurs
+  /// or a [response.Response] on success.
+  Future<Either<AppException, response.Response>> delete(String endpoint, {Map<String, dynamic>? data}) {
+    final res = handleException(
+          () => dio.delete(
+        endpoint,
+        data: data,
+      ),
+      endpoint: endpoint,
+    );
+    return res;
+  }
+
+  /// Performs a PUT request to the specified [endpoint] with optional [data].
+  /// Returns a [Future] that completes with either an [AppException] if an error occurs
+  /// or a [response.Response] on success.
+  Future<Either<AppException, response.Response>> put(String endpoint, {Map<String, dynamic>? data}) {
+    final res = handleException(
+          () => dio.put(
+        endpoint,
+        data: data,
+      ),
+      endpoint: endpoint,
+    );
+    return res;
+  }
+
 }
 
