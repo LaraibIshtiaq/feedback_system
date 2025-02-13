@@ -12,6 +12,12 @@ const Color colorBlueGradientFirst = Color(0xFF428BE1);
 /// This color representing second gradient color for primary button
 const Color colorBlueGradientSecond = Color(0xFF265A98);
 
+/// This color representing first gradient color for primary button
+const Color colorWhiteGradientFirst = Color(0xFFD4E3FF);
+
+/// This color representing second gradient color for primary button
+const Color colorWhiteGradientSecond = Color(0xFFFFFFFF);
+
 /// This color represents a black color.
 const Color colorBlack = Colors.black;
 

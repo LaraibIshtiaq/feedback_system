@@ -1,7 +1,7 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:capp_mobile/domain/model/enums/rating.dart';
-import 'package:capp_mobile/domain/model/ui_dto/event.dart';
-import 'package:capp_mobile/domain/model/ui_dto/feedback.dart';
+import 'package:capp_mobile/data/remote/models/event.dart';
+import 'package:capp_mobile/data/remote/models/feedback.dart';
 import 'package:capp_mobile/features/custom/custom_app_bar.dart';
 import 'package:capp_mobile/features/custom/primary_button.dart';
 import 'package:capp_mobile/features/custom/primary_text_field.dart';
@@ -35,10 +35,11 @@ class GiveFeedbackScreen extends ConsumerWidget {
           title: tr("release_feedback"),
           scaffoldKey: _scaffoldKey,
           onPressedMenu: (){
-            //Navigate it back to menu
+            ///Navigate it back to menu
           },
           onPressedBell: (){
-            //Navigate it to message
+            ///Navigate it to messages
+            context.pushRoute(NotificationsRoute());
           }
       ),
       body: Consumer(builder: (context, ref, child) {
@@ -132,7 +133,11 @@ class GiveFeedbackScreen extends ConsumerWidget {
 
 
                             //Navigate to thanks screen
-                            context.pushRoute(ReviewSubmittedRoute());
+                            context.pushRoute(ReviewSubmittedRoute(
+                              screenTitle: tr("successfully_submitted"),
+                              mainTitle: tr("thank_you_for_your_feedback"),
+                              subTitle: tr("thanks_message_release_feedback")
+                            ));
                           }
                       ),
                     )

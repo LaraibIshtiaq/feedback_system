@@ -1,5 +1,7 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:capp_mobile/features/home/provider/home_view_model.dart';
 import 'package:capp_mobile/shared/constants/assets.dart';
+import 'package:capp_mobile/shared/routes/route.gr.dart';
 import 'package:capp_mobile/shared/theme/app_colors.dart';
 import 'package:capp_mobile/shared/theme/app_dimens.dart';
 import 'package:easy_localization/easy_localization.dart';
@@ -129,6 +131,7 @@ class CustomAppDrawer extends ConsumerWidget {
         ),
         onTap: () {
           ref.read(homeViewModel.selectedDrawer.notifier).state = index;
+          changeToRespectiveScreen(context, index);
         },
       ),
     );
@@ -149,5 +152,26 @@ class CustomAppDrawer extends ConsumerWidget {
       padding: EdgeInsets.only(bottom: dimensions.spacingSmall),
       child: Image.asset(logoTeo, height: 60),
     );
+  }
+
+  void changeToRespectiveScreen(BuildContext context, int index) {
+    switch(index){
+      case 1:
+        Navigator.pop(context);
+        context.pushRoute(ContactUsRoute());
+      case 2:
+        Navigator.pop(context);
+        context.pushRoute(ContactUsRoute());
+      case 3:
+        Navigator.pop(context);
+        context.pushRoute(ContactUsRoute());
+      case 4:
+        Navigator.pop(context);
+        context.pushRoute(ContactUsRoute());
+      case 5:
+        Navigator.pop(context);
+        context.pushRoute(ContactUsRoute());
+    }
+
   }
 }

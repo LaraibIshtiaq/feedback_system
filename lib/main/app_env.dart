@@ -9,6 +9,7 @@ abstract class EnvInfo {
   static void initialize(AppEnvironment environment) {
     EnvInfo._environment = environment;
   }
+
   ///These are some getter methods which return variable values according
   /// to Environment.
   static String get appName => _environment._appTitle;

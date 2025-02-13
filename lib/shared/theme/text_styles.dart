@@ -16,11 +16,12 @@ class AppTypography {
       fontFamily: baseFontFamily,
       color: colorTextPrimaryLight
     ),
+    //Used in Splash
     displayMedium: TextStyle(
-      fontSize: 56,
-      fontWeight: FontWeight.normal,
+      fontSize: 30,
+      fontWeight: FontWeight.w600,
       fontFamily: baseFontFamily,
-      color: colorTextPrimaryLight
+      color: colorWhite
     ),
     // Used in Event list for Event name, -- HEADING(16)
     displaySmall: TextStyle(
@@ -99,12 +100,12 @@ class AppTypography {
     ),
 
 
-    //Used in  -- REGULAR()
+    //Used in bottom sheet of notification  -- REGULAR(18)
     labelLarge: TextStyle(
       fontSize: 18,
       fontWeight: FontWeight.normal,
       fontFamily: baseFontFamily,
-      color: colorTextPrimaryLight
+      color: colorTextSecondaryLight
     ),
     //Used in calendar dates -- REGULAR(16)
     labelMedium: TextStyle(
@@ -132,10 +133,10 @@ class AppTypography {
         fontFamily: baseFontFamily,
         color: colorTextPrimaryDark
     ),
-
+    //Used in splash
     displayMedium: TextStyle(
-        fontSize: 56,
-        fontWeight: FontWeight.normal,
+        fontSize: 30,
+        fontWeight: FontWeight.w600,
         fontFamily: baseFontFamily,
         color: colorTextPrimaryDark
     ),
@@ -222,12 +223,12 @@ class AppTypography {
 
 
 
-    //Used in  -- REGULAR()
+    //Used in bottom sheet of notification  -- REGULAR(18)
     labelLarge: TextStyle(
         fontSize: 18,
         fontWeight: FontWeight.normal,
         fontFamily: baseFontFamily,
-        color: colorTextPrimaryDark
+        color: colorTextSecondaryDark
     ),
     //Used in calendar dates -- REGULAR(16)
     labelMedium: TextStyle(

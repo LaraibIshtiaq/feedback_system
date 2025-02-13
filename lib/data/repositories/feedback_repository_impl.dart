@@ -1,7 +1,7 @@
 import 'dart:developer';
 
 import 'package:capp_mobile/core/response.dart';
-import 'package:capp_mobile/domain/model/ui_dto/feedback.dart';
+import 'package:capp_mobile/data/remote/models/feedback.dart';
 import 'package:capp_mobile/domain/repositories/feedback_repository.dart';
 import 'package:dartz/dartz.dart';
 

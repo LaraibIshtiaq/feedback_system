@@ -1,5 +1,5 @@
 import 'package:capp_mobile/domain/model/ui_dto/event_category.dart';
-import 'package:capp_mobile/domain/model/ui_dto/feedback.dart';
+import 'package:capp_mobile/data/remote/models/feedback.dart';
 import 'package:capp_mobile/services/date_time_service.dart';
 
 class Event{

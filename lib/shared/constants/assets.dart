@@ -16,7 +16,7 @@ const String icNotSatisfiedActive = "assets/icons/ic_thumbs_down_active.svg";
 const String icNotSatisfiedInActive = "assets/icons/ic_thumbs_down_inactive.svg";
 
 //Navigation Drawer
-const String imageProfile = "assets/images/profile_image.jpg";
+const String imageProfile = "assets/images/profile_temp_image.png";
 const String logoTeo = "assets/images/logo_teo.jpg";
 const String icCalendarActive = "assets/icons/ic_calendar_active.svg";
 const String icCalendarInActive = "assets/icons/ic_calendar_inactive.svg";
@@ -27,4 +27,5 @@ const String icContactInActive = "assets/icons/ic_contact_inactive.svg";
 const String icSettingActive = "assets/icons/ic_settings_active.svg";
 const String icSettingInActive = "assets/icons/ic_settings_inactive.svg";
 const String icLogout = "assets/icons/ic_logout.svg";
+const String logoCapp = "assets/images/logoCapp.svg";
 
