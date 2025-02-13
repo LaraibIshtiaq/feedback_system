@@ -1,4 +1,4 @@
-import 'package:capp_mobile/domain/model/ui_dto/event.dart';
+import 'package:capp_mobile/data/remote/models/event.dart';
 
 abstract class EventRepository {
   Future<List<Event>> getEvents(String projectId, int month);

@@ -1,4 +1,4 @@
-import 'package:capp_mobile/domain/model/ui_dto/event.dart';
+import 'package:capp_mobile/data/remote/models/event.dart';
 import 'package:capp_mobile/features/home/provider/event_provider.dart';
 import 'package:capp_mobile/features/home/provider/home_view_model.dart';
 import 'package:capp_mobile/features/home/widget/event_list_item.dart';

@@ -6,6 +6,7 @@ import 'package:capp_mobile/features/home/provider/project_provider.dart';
 import 'package:capp_mobile/features/home/widget/calendar.dart';
 import 'package:capp_mobile/features/home/widget/event_filters.dart';
 import 'package:capp_mobile/features/home/widget/event_list.dart';
+import 'package:capp_mobile/features/notifications/provider/contact_us_view_model.dart';
 import 'package:capp_mobile/shared/constants/assets.dart';
 import 'package:capp_mobile/shared/routes/route.gr.dart';
 import 'package:capp_mobile/shared/theme/app_colors.dart';
@@ -32,7 +33,11 @@ class HomeScreen extends ConsumerWidget {
           onPressedMenu: (){
             Scaffold.of(context).openDrawer();
           },
-          onPressedBell: (){},
+          onPressedBell: (){
+            final contactUsVM = ref.read(contactUsViewModelProvider);
+            contactUsVM.getNotifications("");
+            context.pushRoute(NotificationsRoute());
+          },
         scaffoldKey: _scaffoldKey, // Pass scaffoldState here
       ),
 

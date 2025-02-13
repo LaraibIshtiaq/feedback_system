@@ -11,12 +11,11 @@ class AppRouter extends RootStackRouter {
   List<AutoRoute> get routes => [
     AutoRoute(page: SplashRoute.page, initial: true),
     AutoRoute(page: HomeRoute.page),
-    AutoRoute(page: LoginRoute.page),
-    AutoRoute(page: ForgetPasswordRoute.page),
-    AutoRoute(page: SignupRoute.page),
     AutoRoute(page: AddEventRoute.page),
     AutoRoute(page: GiveFeedbackRoute.page),
-    AutoRoute(page: ReviewSubmittedRoute.page)
+    AutoRoute(page: ReviewSubmittedRoute.page),
+    AutoRoute(page: ContactUsRoute.page),
+    AutoRoute(page: NotificationsRoute.page)
   ];
 
 }

@@ -9,9 +9,16 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 @RoutePage()
 class ReviewSubmittedScreen extends ConsumerWidget {
+  String screenTitle;
+  String mainTitle;
+  String subTitle;
+
   final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
 
-  ReviewSubmittedScreen({super.key});
+  ReviewSubmittedScreen({super.key,
+    required this.screenTitle,
+  required this.mainTitle,
+  required this.subTitle});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -19,7 +26,7 @@ class ReviewSubmittedScreen extends ConsumerWidget {
       key: _scaffoldKey,
       appBar: customAppBar(
           context: context,
-          title: tr("successfully_submitted"),
+          title: screenTitle,
           scaffoldKey: _scaffoldKey,
           onPressedBackButton: (){
             //Navigate it back to home
@@ -32,7 +39,9 @@ class ReviewSubmittedScreen extends ConsumerWidget {
       ),
       body: Consumer(builder: (context, ref, child) {
         return Padding(
-          padding: EdgeInsets.symmetric(horizontal: dimensions.spacingMedium),
+          padding: EdgeInsets.symmetric(
+            horizontal: dimensions.spacingMedium,
+          vertical: dimensions.spacingExtraLarge),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
@@ -47,15 +56,20 @@ class ReviewSubmittedScreen extends ConsumerWidget {
                     ),
                   ),
 
-                  Text(tr("\n${tr("thank_you_for_your_feedback")}"),
+                  Text(tr("\n$mainTitle"),
                       textAlign: TextAlign.center,
                       style: Theme.of(context).textTheme.headlineSmall
                   ),
 
-                  Text("\n${tr("thanks_message")}.\n\n${tr("kind_regards_teo")}",
+                  Text("\n$subTitle",
                       textAlign: TextAlign.center,
                       style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                         color: colorTextSecondaryLight
+                      )),
+                  Text("\n${tr("kind_regards")}\n${tr("teo")}",
+                      textAlign: TextAlign.center,
+                      style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                          color: colorTextSecondaryLight
                       )),
                 ],
               ),

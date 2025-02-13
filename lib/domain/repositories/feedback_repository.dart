@@ -1,4 +1,4 @@
-import 'package:capp_mobile/domain/model/ui_dto/feedback.dart';
+import 'package:capp_mobile/data/remote/models/feedback.dart';
 
 abstract class FeedbackRepository {
   Future<List<EventFeedback>> getFeedback(String eventId);

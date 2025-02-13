@@ -1,5 +1,5 @@
 
-import 'package:capp_mobile/domain/model/ui_dto/feedback.dart';
+import 'package:capp_mobile/data/remote/models/feedback.dart';
 import 'package:capp_mobile/domain/providers/feedback_repo_provider.dart';
 import 'package:capp_mobile/domain/repositories/feedback_repository.dart';
 import 'package:flutter/material.dart';

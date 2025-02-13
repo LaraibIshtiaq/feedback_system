@@ -1,5 +1,5 @@
 import 'package:capp_mobile/domain/model/enums/rating.dart';
-import 'package:capp_mobile/domain/model/ui_dto/event.dart';
+import 'package:capp_mobile/data/remote/models/event.dart';
 import 'package:capp_mobile/features/custom/secondary_dropdown.dart';
 import 'package:capp_mobile/shared/constants/assets.dart';
 import 'package:capp_mobile/shared/theme/app_colors.dart';

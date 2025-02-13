@@ -1,5 +1,5 @@
 import 'package:capp_mobile/domain/model/enums/categories.dart';
-import 'package:capp_mobile/domain/model/ui_dto/event.dart';
+import 'package:capp_mobile/data/remote/models/event.dart';
 import 'package:capp_mobile/domain/model/ui_dto/project.dart';
 import 'package:capp_mobile/domain/providers/event_repo_provider.dart';
 import 'package:capp_mobile/domain/providers/project_repo_provider.dart';

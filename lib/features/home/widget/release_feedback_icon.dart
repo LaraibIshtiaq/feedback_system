@@ -1,11 +1,10 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:capp_mobile/domain/model/enums/rating.dart';
-import 'package:capp_mobile/domain/model/ui_dto/event.dart';
+import 'package:capp_mobile/data/remote/models/event.dart';
 import 'package:capp_mobile/features/home/provider/home_view_model.dart';
 import 'package:capp_mobile/features/home/widget/view_submitted_feedback.dart';
 import 'package:capp_mobile/shared/constants/assets.dart';
 import 'package:capp_mobile/shared/routes/route.gr.dart';
-import 'package:capp_mobile/shared/theme/app_colors.dart';
 import 'package:capp_mobile/shared/theme/app_dimens.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';

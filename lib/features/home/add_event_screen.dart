@@ -1,6 +1,6 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:capp_mobile/domain/model/enums/categories.dart';
-import 'package:capp_mobile/domain/model/ui_dto/event.dart';
+import 'package:capp_mobile/data/remote/models/event.dart';
 import 'package:capp_mobile/domain/model/ui_dto/event_category.dart';
 import 'package:capp_mobile/features/custom/confirmation_popup.dart';
 import 'package:capp_mobile/features/custom/custom_app_bar.dart';

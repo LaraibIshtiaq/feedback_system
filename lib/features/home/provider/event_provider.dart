@@ -1,4 +1,4 @@
-import 'package:capp_mobile/domain/model/ui_dto/event.dart';
+import 'package:capp_mobile/data/remote/models/event.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 var eventProvider = StateNotifierProvider.autoDispose<EventNotifier, List<Event>>((ref) {

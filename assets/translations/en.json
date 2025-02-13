@@ -24,8 +24,12 @@
   "satisfied" : "Satisfied",
   "not_satisfied" : "Not Satisfied",
   "thank_you_for_your_feedback": "Thank you for your feedback",
-  "thanks_message" : "We appreciate your time and effort in helping us improve. Your message has been sent to TEO’s Customer Advisor",
-  "kind_regards_teo": "Kind regards TEO",
+  "thanks_for_reaching_out": "Thanks For Reaching Out",
+  "thanks_message_release_feedback" : "We appreciate your time and effort in helping us improve. Your message has been sent to TEO’s Customer Advisor",
+  "kind_regards": "Kind regards",
+  "teo": "TEO",
+  "successfully_sent": "Successfully Sent",
+  "thanks_message_contact_us": "Your message has been sent to the selected recipients. We will get back as soon as possible. ",
   "events": "Events",
   "by": "by",
   "let_us_know_how_it_went_and_how_we_can_improve": "Let us know how it went and how we can improve",
@@ -43,5 +47,7 @@
   "settings": "Settings",
   "team": "Team",
   "logout": "Logout",
-  "feedback_can_be_added_after_the_release_date": "Feedback can be added after the release date"
+  "feedback_can_be_added_after_the_release_date": "Feedback can be added after the release date",
+  "notifications": "Notifications",
+  "you_got_a_message_by": "You got a message by"
 }

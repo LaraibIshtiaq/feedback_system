@@ -22,6 +22,7 @@ dependencies:
   flutter_svg: ^2.0.17
   clean_calendar:
     path: ./clean_calendar_master
+  flutter_launcher_icons: ^0.14.3
 
 
 dev_dependencies:
@@ -31,6 +32,11 @@ dev_dependencies:
 
   flutter_test:
     sdk: flutter
+
+flutter_icons:
+  image_path: "assets/icons/ic_capp.png"
+  android: true
+  ios: true
 
 # The following section is specific to Flutter packages.
 flutter:
