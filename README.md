@@ -1,11 +1,10 @@
-# capp_mobile
+# Feedback_System
 
 A new Flutter project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application 
-developed for TEO.
+This project is a starting point for a Flutter application.
 It is developed to automate the process of receiving feedback from 
 stakeholders of their respective project deliveries and overall performance.
 
