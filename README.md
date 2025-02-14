@@ -24,3 +24,20 @@ https://pub.dev/packages/auto_route
  - Add route in route.dart file
  - If widget name is [LoginScreen] then route name will be [LoginRoute]
  - To navigate to the route use `pushRoute(LoginRoute)'. 
+
+
+
+## Screenshots of Feedback system app
+<img width="413" alt="home_page" src="https://github.com/user-attachments/assets/3139993c-968c-4eb9-8052-80b2c4b6334e" />
+
+
+<img width="413" alt="add_event_page" src="https://github.com/user-attachments/assets/83db19cd-b946-40bc-8f69-21bb149b338e" />
+
+
+<img width="413" alt="add_feedback_page" src="https://github.com/user-attachments/assets/d76edaa5-89e4-4024-87ea-36712bcc8b4f" />
+
+
+<img width="413" alt="view_submitted_feedback_page" src="https://github.com/user-attachments/assets/8f9f2a53-5150-4430-aff4-cdf71870b451" />
+
+
+<img width="413" alt="view_recieved_notifications" src="https://github.com/user-attachments/assets/67310538-d31c-43e7-acb5-5d9b86d1aa44" />
